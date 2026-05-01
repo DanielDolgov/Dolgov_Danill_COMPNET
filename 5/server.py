@@ -107,12 +107,12 @@ async def get_data_endpoint():
 # docker pull postgres
 
 
-# docker run -d --name compnet_app --network comp-net-5 -p 8080:8080
-#            compnet/app
-
 # docker run -d --name compnet_db --network comp-net-5 -e POSTGRES_USER=postgres
 #            -e POSTGRES_PASSWORD=postgregory1 -e POSTGRES_DB=DB_4
 #            postgres
+
+# docker run -d --name compnet_app --network comp-net-5 -p 8080:8080
+#            compnet/app
 
 
 # http://127.0.0.1:8080/parse
