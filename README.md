@@ -23,11 +23,13 @@
 # Задание 6
 Настроить проксирование, таким образом, чтобы запросы на 80 порт перенаправлялись в ваше приложение в докер контейнере
 
-### То же самое, что и в 5-м задании
+### То же самое, что и в 5-м задании (та же папка, но добавил nginx.conf)
 
 ### Создать образ nginx, и запустить его контейнер
-- docker pull nginx
-- docker run -d --name compnet_nginx --network comp-net-5 -v ./nginx.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 nginx:latest
+```bash
+docker pull nginx
+docker run -d --name compnet_nginx --network comp-net-5 -v ./nginx.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 nginx:latest
+```
 
 ### Использование
 - http://127.0.0.1/parse
