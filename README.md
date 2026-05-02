@@ -43,7 +43,7 @@ docker run -d --name compnet_app --network comp-net-5 -p 8080:8080 compnet/app
 docker pull nginx
 ```
 ```bash
-docker run -d --name compnet_nginx --network comp-net-5 -v ./nginx_6.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 nginx:latest
+docker run -d --name compnet_nginx_6 --network comp-net-5 -v ./nginx_6.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 nginx:latest
 ```
 
 ## Использование
@@ -57,12 +57,12 @@ docker run -d --name compnet_nginx --network comp-net-5 -v ./nginx_6.conf:/etc/n
 ## Подготовка
 
 ### Вся подготовка 5-го задания + добавили файл nginx_7.conf
-### Создать образ nginx, и запустить его контейнер
+### Создать образ nginx, и запустить его контейнер (остановить контейнер из задания 6)
 ```bash
 docker pull nginx
 ```
 ```bash
-docker run -d --name compnet_nginx --network comp-net-5 -v ./nginx_7.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 -p 8081:8081 nginx:latest
+docker run -d --name compnet_nginx_7 --network comp-net-5 -v ./nginx_7.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 -p 8081:8081 nginx:latest
 ```
 
 ## Использование
