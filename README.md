@@ -66,5 +66,5 @@ docker run -d --name compnet_nginx_7 --network comp-net-5 -v ./nginx_7.conf:/etc
 ```
 
 ## Использование
-- http://127.0.0.1/parse
-- http://127.0.0.1/get-data
+- http://2.59.160.0/parse
+- http://5.10.0.0/parse
