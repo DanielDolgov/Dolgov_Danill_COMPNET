@@ -62,7 +62,7 @@ docker run -d --name compnet_nginx_6 --network comp-net-5 -v ./nginx_6.conf:/etc
 docker pull nginx
 ```
 ```bash
-docker run -d --name compnet_nginx_7 --network comp-net-5 -v ./nginx_7.conf:/etc/nginx/conf.d/default.conf:ro -p 80:80 -p 7777:7777 nginx:latest
+docker run -d --name compnet_nginx_7 --network comp-net-5 -v ./nginx_7.conf:/etc/nginx/conf.d/default.conf:ro -v ./ru.conf:/etc/nginx/ru.conf:ro -p 80:80 -p 7777:7777 nginx:latest
 ```
 
 ## Использование
